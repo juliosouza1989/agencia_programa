@@ -40,7 +40,7 @@ match servico:
                         valor_total = 40.0
                         print(f'Valor da lona entra no valor mínino R$: {valor_total}')
                     
-                    else:
+                        else:
                         valor_total = tamanho * 40.0
                         print(f'O valor total do Banner R$: {valor_total}')
 
@@ -55,14 +55,12 @@ match servico:
                     print('O Valor é R$: 30.00')
                       
                 case 2:
-                    print('O Valor é R$: 20.00')
-                    
+                    print('O Valor é R$: 20.00')           
 
             
             
 
   
-                    print('O Valor é R$: ')
                     
 
             
