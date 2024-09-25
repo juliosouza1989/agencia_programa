@@ -2,11 +2,6 @@
 
 from decimal import Decimal
 
-tamanho = int
-valor_total = float
-recorte = int
-altura_lona = float
-largura_lona = float
 
 #Trecho para escolher a opção do serviço
 
