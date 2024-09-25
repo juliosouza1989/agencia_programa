@@ -1,4 +1,5 @@
 # agencia_programa
+
 from decimal import Decimal
 
 tamanho = int
@@ -6,12 +7,15 @@ valor_total = float
 recorte = int
 altura_lona = float
 largura_lona = float
+
 #Trecho para escolher a opção do serviço
+
 op = int(input( 'Entre com a opção desejada: \n 1-Impressão Digital \n 2-Impressão Plotter \n 3-Recorte: \n' ))
 
 
 servico = op
 match servico:
+
         case 1:
             print('Impressão Digital ')            
             papel = int(input('Entre com a quandidade de impressão: '))          
@@ -35,6 +39,7 @@ match servico:
                     print(f'O tamanho total do banner é: {tamanho} ')
 
 #condição pra saber se o valor cai no mínimo
+
                     tamanho_m = 1.00
                     if tamanho < tamanho_m:
                         valor_total = 40.0
