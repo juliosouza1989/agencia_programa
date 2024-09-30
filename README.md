@@ -1,26 +1,23 @@
-# agencia_programa
-
 from decimal import Decimal
 
 
 #Trecho para escolher a opção do serviço
 
-op = int(input( 'Entre com a opção desejada: \n 1-Impressão Digital \n 2-Impressão Plotter \n 3-Recorte: \n' ))
+op = int(input( 'Entre com a opção desejada: \n 1-Impressão Digital \n 2-Impressão Plotter \n 3-Recorte \n' ))
 
 
 servico = op
 match servico:
-
         case 1:
-            print('Impressão Digital ')            
+            print('Impressão Digital')             
             papel = int(input('Entre com a quandidade de impressão: '))          
 
-            valor_papel = papel * 8
-            print(f'O valor total de impressão é R$: {valor_papel:,.0f}')
-        
+valor_papel = papel * 8.0
+            print(f'O valor total de impressão é R$: {valor_papel:,.2f}')
+            
         case 2:
             print('Impressão Plotter')
-            op_p = int(input('\n 1-Adesivo \n 2-Banner \n Entre com a opção:'))
+            op_p = int(input('\n 1-Adesivo \n 2-Banner \n Entre com a opção: '))
             servico_1 = op_p
 
             match servico_1:
@@ -31,7 +28,7 @@ match servico:
                     altura_lona = float(input('Entre com a altura do banner em metro: '))
                     largura_lona = float(input('Entre com a largura do banner em metro: '))
                     tamanho = altura_lona * largura_lona
-                    print(f'O tamanho total do banner é: {tamanho} ')
+                    print(f'\n O tamanho total do banner é: {tamanho} \n')
 
 #condição pra saber se o valor cai no mínimo
 
@@ -40,9 +37,9 @@ match servico:
                         valor_total = 40.0
                         print(f'Valor da lona entra no valor mínino R$: {valor_total}')
                     
-                        else:
+                    else:
                         valor_total = tamanho * 40.0
-                        print(f'O valor total do Banner R$: {valor_total}')
+                        print(f'O valor total do Banner R$: {valor_total:,.2f}')
 
         case 3:
             print('Recorte')
@@ -55,12 +52,7 @@ match servico:
                     print('O Valor é R$: 30.00')
                       
                 case 2:
-                    print('O Valor é R$: 20.00')           
-
-            
-            
-
-  
+                    print('O Valor é R$: 20.00')
                     
 
             
